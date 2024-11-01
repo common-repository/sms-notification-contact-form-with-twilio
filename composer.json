@@ -1,0 +1,22 @@
+{
+    "name": "hamidazad/wp-plugin-boilerplate",
+    "description": "Send sms notification upon Contact form 7 submit ",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Hamid Azad",
+            "email": "hamidxazad@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "twilio/sdk": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+		"Sncfwt\\Plugin\\Includes\\":"includes/"
+        },
+        "files":["includes/functions.php"]
+    }
+}
